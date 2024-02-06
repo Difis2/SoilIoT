@@ -1,0 +1,2 @@
+received_at	application_id	device_id	f_port	f_cnt	frm_payload	rssi	snr	data_rate_index	consumed_airtime
+2023-09-13T14:53:54.901103541Z	my-app-2000	eui-aaaa202304200002	2	1	AgMcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANTmgA	-64	9.75	{'lora': {'bandwidth': 125000, 'spreading_factor': 7, 'coding_rate': '4/5'}}	0.092416s

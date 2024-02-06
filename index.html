@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SoilIoT | IoT in Precision Agriculture</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="SoilIoT Logo"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Objectives</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Results</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal btn--predict-modal" href="#" onclick="openModal(event);"
+              >Predict</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal btn--login-modal" href="#" onclick="openLoginModal(event)"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          When
+          <span class="highlight">IoT</span>
+          is used for <br />
+          <span class="highlight">Precision Agriculture</span>
+        </h1>
+        <h4>A simple project for an efficient ecosystem!</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/IoT-in-Agriculture.jpeg"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About</h2>
+        <h3 class="section__header">
+          In today's world, we face many challenges when it comes to food
+          production.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/World-Population-Growth-lazy.png"
+          data-src="img/World-Population-Growth.png"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Growing Population</h5>
+          <p>
+            Increases, not only the demand for agricultural product, but also
+            for urban expansion, which leads to a decrease of agricultural
+            fields, and consequently, a decrease in agricultural production.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-cloud"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Climate Changes</h5>
+          <p>
+            One of the biggest challenges and threat to the human health and
+            agriculture. It is defined as significant changes in the average
+            values of weather elements like precipitation and temperature.
+          </p>
+        </div>
+        <img
+          src="img/climate change-lazy.jpg"
+          data-src="img/climate change.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/waste resources-lazy.jpg"
+          data-src="img/waste resources.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-package"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Wastage of resources</h5>
+          <p>
+            The amount of waste of resources duo to unefficient agriculture
+            methods should be reduced. This waste is being reduced with
+            Precision Agriculture, from a perspective of resources and nutrient
+            use, efficiency, and ecological impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Objectives</h2>
+        <h3 class="section__header">
+          Main objective: Development of an IoT ecosystem to measure parameters
+          and to control the water and nutrient concentration.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>IoT ecosystem
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Managemente software
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Server-level
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-thermometer"></use>
+            </svg>
+          </div>
+          <p>
+            Develop an IoT ecosystem that includes measurement nodes of soil
+            characteristics, and computing and communication platforms based on
+            type microcontrollers ESP32.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-settings"></use>
+            </svg>
+          </div>
+          <p>
+            Develop a management software component including geographic
+            information on the location of nodes, data recording and graphical
+            representation of the evolution of soil parameters: a mobile
+            application to control, read and graphical representation.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-wifi"></use>
+            </svg>
+          </div>
+          <p>Develop a server-level data analysis module.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">Here are some results!</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best financial decision ever!</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              The last step to becoming a complete minimalist
+            </h5>
+            <blockquote class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Finally free from old-school banks
+            </h5>
+            <blockquote class="testimonial__text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best way to find what crop is the best for your soil and climate
+          parameters!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal" onclick="openModal()">Predict your crop today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a
+            class="footer__link"
+            href="https://www.linkedin.com/in/diogo-soares-2a236925b/"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </footer>
+    
+    <div class="modal login-modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Login to Your Account
+      </h2>
+      <form class="modal__form">
+        <label>User</label>
+        <input type="user" name="user" />
+        <label>Password</label>
+        <input type="password" name="password" />
+        <button id="loginButton" class="btn" onclick="login()">
+          Login &rarr;
+        </button>
+      </form>
+    </div>
+    <div class="modal predict-modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Predict your crop <br />
+        in just <span class="highlight">a click</span>
+      </h2>
+      <form class="modal__form">
+        <label>Humidity(%)</label>
+        <input type="text" name="humidity" />
+        <label>N(Nitrogen)</label>
+        <input type="text" name="n" />
+        <label>P(Phosphorus)</label>
+        <input type="text" name="p" />
+        <label>K(Potassium)</label>
+        <input type="text" name="k" />
+        <label>Temperature(ºC)</label>
+        <input type="text" name="temperature" />
+        <button id="predictButton" class="btn" onclick="predict()">
+          Predict &rarr;
+        </button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
